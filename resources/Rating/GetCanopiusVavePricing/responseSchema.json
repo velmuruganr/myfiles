@@ -1,0 +1,971 @@
+{
+  "type" : "object",
+  "properties" : {
+    "OwnerId" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "1"
+    },
+    "GeneralAgency" : {
+      "type" : "object",
+      "properties" : {
+        "Agency" : {
+          "type" : "array",
+          "exampleSetFlag" : false,
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "Agent" : {
+                "type" : "array",
+                "exampleSetFlag" : false,
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "AgencyNumber" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "A002"
+                    },
+                    "AgentCommissionAmount" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "0"
+                    },
+                    "IsAgentCommissionOverridden" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "No"
+                    },
+                    "OverrideAgentCommissionPercentage" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "2"
+                    },
+                    "DefaultCommissionPercentage" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "2"
+                    }
+                  },
+                  "exampleSetFlag" : false,
+                  "types" : [ "object" ]
+                },
+                "types" : [ "array" ]
+              }
+            },
+            "exampleSetFlag" : false,
+            "types" : [ "object" ]
+          },
+          "types" : [ "array" ]
+        }
+      },
+      "exampleSetFlag" : false,
+      "types" : [ "object" ]
+    },
+    "ServiceRequestDetail" : {
+      "required" : [ "OwnerId", "EndClientUserUniqueSessionId", "ServiceRequestVersion", "LanguageCode", "UserName", "RegionCode", "ServiceResponseVersion", "ResponseType", "Token", "Lob", "BrowserIp" ],
+      "type" : "object",
+      "properties" : {
+        "OwnerId" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "1"
+        },
+        "EndClientUserUniqueSessionId" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "1.0"
+        },
+        "ServiceRequestVersion" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "1.0"
+        },
+        "LanguageCode" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "en"
+        },
+        "UserName" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "isorateadmin"
+        },
+        "RegionCode" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "US"
+        },
+        "ServiceResponseVersion" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "1.0"
+        },
+        "ResponseType" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "json"
+        },
+        "Token" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "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"
+        },
+        "Lob" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "PL"
+        },
+        "BrowserIp" : {
+          "type" : "string",
+          "exampleSetFlag" : false,
+          "types" : [ "string" ],
+          "default" : "192.158.1.38."
+        }
+      },
+      "exampleSetFlag" : false,
+      "types" : [ "object" ]
+    },
+    "OwnerCommissionPercentage" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "2"
+    },
+    "EventName" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "GetCanopiusVavePricing"
+    },
+    "Account" : {
+      "type" : "object",
+      "properties" : {
+        "Insured" : {
+          "type" : "array",
+          "exampleSetFlag" : false,
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "Location" : {
+                "type" : "array",
+                "exampleSetFlag" : false,
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "Building" : {
+                      "type" : "array",
+                      "exampleSetFlag" : false,
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "Coverage" : {
+                            "type" : "array",
+                            "exampleSetFlag" : false,
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "WindCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "AopPolicyDeductibleAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "1000"
+                                },
+                                "HurricaneDeductiblePercentage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0.01"
+                                },
+                                "TotalTax" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "WindDeductibleType" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Named Storm"
+                                },
+                                "DwellingCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "200,000"
+                                },
+                                "OtherStructureCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "2%"
+                                },
+                                "PersonalPropertyCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "25%"
+                                },
+                                "LossOfUseCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "20%"
+                                },
+                                "WaterDamageSublimit" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Full Coverage"
+                                },
+                                "AOBExclusionYN" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "SeniorDiscountYN" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "No"
+                                },
+                                "OrdinanceLawCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "10"
+                                },
+                                "PersonalPropertyReplacementcost" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "IncreasedReplacementCost" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "ScreenedEnclosuresCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "$45,000"
+                                },
+                                "LossAssessment" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "$10,000"
+                                },
+                                "EarthquakeDeductible" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "5"
+                                },
+                                "ScheduledPersonalPropertyCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "PersonalLiabilityCoverageL" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "500000"
+                                },
+                                "MoldCov" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "10000"
+                                },
+                                "MedicalPaymentsCoverageM" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "3000"
+                                },
+                                "WaterBackupAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "5000"
+                                },
+                                "AnimalLiability" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "50000"
+                                },
+                                "PersonalInjury" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "EquipmentBreakdown" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "ServiceLineCoverageYN" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "IdentityFraudCoverageYN" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "HomeSharingCoverageYN" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "ExtendedLiabilityOnSecondary" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "1"
+                                },
+                                "GolfCartPhysicalDamageCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "GolfCartCoverage" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "5000"
+                                },
+                                "NumberOfGolfCarts" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "1"
+                                },
+                                "AllRiskCovA" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Yes"
+                                },
+                                "PolicyformOption" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "RCV"
+                                },
+                                "BasePremium" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "TotalFee" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "TotalPremium" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                }
+                              },
+                              "exampleSetFlag" : false,
+                              "types" : [ "object" ]
+                            },
+                            "types" : [ "array" ]
+                          },
+                          "Fee" : {
+                            "type" : "array",
+                            "exampleSetFlag" : false,
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "IsFeeOverridden" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "No"
+                                },
+                                "OverriddenAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "OverriddenBy" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "UnderWriter"
+                                },
+                                "OverriddenType" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Amount"
+                                },
+                                "FeeType" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Amount"
+                                },
+                                "FeeName" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "InspectionFee"
+                                },
+                                "FeeFactor" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "FeeAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "250"
+                                }
+                              },
+                              "exampleSetFlag" : false,
+                              "types" : [ "object" ]
+                            },
+                            "types" : [ "array" ]
+                          },
+                          "GridID" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "260409717"
+                          },
+                          "ResType" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Single Family"
+                          },
+                          "ProtectionClass" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "4"
+                          },
+                          "AgeOfRoof" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "6-10 years"
+                          },
+                          "ConstructionType" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Steel"
+                          },
+                          "FireAlarm" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "None"
+                          },
+                          "InteriorSprinkler" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "None"
+                          },
+                          "BurglarAlarm" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "None"
+                          },
+                          "DateBuilt" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1975"
+                          },
+                          "ElectricUpdated" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1993"
+                          },
+                          "PlumbingUpdated" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1993"
+                          },
+                          "HeatingUpdated" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "2006"
+                          },
+                          "WaterHeaterLocation" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Garage"
+                          },
+                          "LaundryLocation" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Garage"
+                          },
+                          "Occupancy" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Rental Only"
+                          },
+                          "RoofMaterial" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Poured Concrete"
+                          },
+                          "RoofShape" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "gable"
+                          },
+                          "RoofToWallConnection" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Double Wrap"
+                          },
+                          "RoofDeckAttachments" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "8d Nails (High Wind Nail Schedule)"
+                          },
+                          "MitigationOpenings" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Impact Glass"
+                          },
+                          "ExteriorSiding" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Wood"
+                          },
+                          "NumberOfStories" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1"
+                          },
+                          "SquareFootageFactor" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1800"
+                          },
+                          "NumberOfClaims" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "0"
+                          },
+                          "SolarPanelsType" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "None"
+                          },
+                          "SwimmingPoolOnPremises" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "No"
+                          },
+                          "IsPolybutylenePiping" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "Yes"
+                          },
+                          "SquareFt" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ],
+                            "default" : "1000"
+                          },
+                          "PersonalProperty" : {
+                            "type" : "array",
+                            "exampleSetFlag" : false,
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "ItemName" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Jewelry"
+                                },
+                                "ItemValue" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "1000"
+                                }
+                              },
+                              "exampleSetFlag" : false,
+                              "types" : [ "object" ]
+                            },
+                            "types" : [ "array" ]
+                          },
+                          "LossHistory" : {
+                            "type" : "array",
+                            "exampleSetFlag" : false,
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "LossDescription" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Prolonged heavy rainfall. Damage to contents on lower floor"
+                                },
+                                "LossAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "5000"
+                                },
+                                "ClaimStatus" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "True"
+                                },
+                                "LossDate" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "2022/07/06"
+                                }
+                              },
+                              "exampleSetFlag" : false,
+                              "types" : [ "object" ]
+                            },
+                            "types" : [ "array" ]
+                          },
+                          "Tax" : {
+                            "type" : "array",
+                            "exampleSetFlag" : false,
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "TaxName" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Surplus Lines Tax"
+                                },
+                                "TaxType" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "TaxAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "300"
+                                },
+                                "IsTaxOverridden" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "No"
+                                },
+                                "OverriddenAmount" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "0"
+                                },
+                                "OverriddenType" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Amount"
+                                },
+                                "OverriddenBy" : {
+                                  "type" : "string",
+                                  "exampleSetFlag" : false,
+                                  "types" : [ "string" ],
+                                  "default" : "Underwriter"
+                                }
+                              },
+                              "exampleSetFlag" : false,
+                              "types" : [ "object" ]
+                            },
+                            "types" : [ "array" ]
+                          }
+                        },
+                        "exampleSetFlag" : false,
+                        "types" : [ "object" ]
+                      },
+                      "types" : [ "array" ]
+                    },
+                    "County" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "Harris"
+                    },
+                    "Zipcode1" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "29455"
+                    },
+                    "StreetNumberAddress1" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "100"
+                    },
+                    "StreetNameAddress2" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "King Street"
+                    },
+                    "City" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "CHARLESTON"
+                    },
+                    "StateRegionCode" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "SC"
+                    },
+                    "NumberOfBuildings" : {
+                      "type" : "string",
+                      "exampleSetFlag" : false,
+                      "types" : [ "string" ],
+                      "default" : "1"
+                    }
+                  },
+                  "exampleSetFlag" : false,
+                  "types" : [ "object" ]
+                },
+                "types" : [ "array" ]
+              },
+              "InsuredName" : {
+                "type" : "string",
+                "exampleSetFlag" : false,
+                "types" : [ "string" ],
+                "default" : "Sample Test"
+              },
+              "InsuranceScore" : {
+                "type" : "string",
+                "exampleSetFlag" : false,
+                "types" : [ "string" ],
+                "default" : "651-675"
+              },
+              "Dob" : {
+                "type" : "string",
+                "exampleSetFlag" : false,
+                "types" : [ "string" ],
+                "default" : "01/01/1990"
+              }
+            },
+            "exampleSetFlag" : false,
+            "types" : [ "object" ]
+          },
+          "types" : [ "array" ]
+        }
+      },
+      "exampleSetFlag" : false,
+      "types" : [ "object" ]
+    },
+    "CarrierName" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "Lloyds_Preferred"
+    },
+    "ProductNumber" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "PL_4742_12"
+    },
+    "ProductVerNumber" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "PL_4742_12_V1"
+    },
+    "SublineName" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "HO3"
+    },
+    "PerformanceList" : {
+      "type" : "array",
+      "exampleSetFlag" : false,
+      "items" : {
+        "required" : [ "ServiceRequestDetail" ],
+        "type" : "object",
+        "properties" : {
+          "ServiceRequestDetail" : {
+            "type" : "object",
+            "exampleSetFlag" : false,
+            "types" : [ "object" ]
+          },
+          "RuleName" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "Test"
+          },
+          "ProcessTime" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "1"
+          }
+        },
+        "exampleSetFlag" : false,
+        "types" : [ "object" ]
+      },
+      "types" : [ "array" ]
+    },
+    "RateLookupDate" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "07/06/2022"
+    },
+    "ResponseStatus" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "Success"
+    },
+    "PolicyExpirationDate" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "07/06/2023"
+    },
+    "PolicyEffectiveDate" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "07/06/2022"
+    },
+    "ErrorMessage" : {
+      "type" : "array",
+      "exampleSetFlag" : false,
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "UserMessage" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "PLUMBINGTYPE value of 4 not allowed with AOP cover"
+          },
+          "MessageCode" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "3163"
+          },
+          "Message" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "Unauthorised request"
+          },
+          "RuleMessage" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "PLUMBINGTYPE value of 4 not allowed with AOP cover"
+          }
+        },
+        "exampleSetFlag" : false,
+        "types" : [ "object" ]
+      },
+      "types" : [ "array" ]
+    },
+    "OwnerCommissionAmount" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "78.75"
+    },
+    "QuoteType" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "New Business"
+    }
+  },
+  "exampleSetFlag" : false,
+  "types" : [ "object" ]
+}
