@@ -9,7 +9,7 @@
     "version" : "1.0.0.1"
   },
   "servers" : [ {
-    "url" : "https://localhost:8080/solartisinsure"
+    "url" : "http://10.101.1.72:8080/solartisinsure"
   } ],
   "paths" : {
     "/pl/api/rating/getcanopiusvavepricing" : {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "/pl/api/transaction/findinsured" : {
+    "/api/transaction/pl/findinsured" : {
       "description" : "",
       "post" : {
         "tags" : [ "Transaction" ],
