@@ -83,7 +83,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "/resources/Rating/GetCanopiusVavePricing/requestSchema.json",
+                "$ref" : "https://raw.githubusercontent.com/velmuruganr/myfiles/main/resources/Rating/GetCanopiusVavePricing/requestSchema.json",
                 "exampleSetFlag" : false
               },
               "exampleSetFlag" : false
@@ -177,7 +177,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "/resources/Transaction/FindInsured/requestSchema.json",
+                "$ref" : "https://raw.githubusercontent.com/velmuruganr/myfiles/main/resources/Transaction/FindInsured/requestSchema.json",
                 "exampleSetFlag" : false
               },
               "exampleSetFlag" : false
@@ -271,7 +271,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "/resources/Workflow/FindInsured/requestSchema.json",
+                "$ref" : "https://raw.githubusercontent.com/velmuruganr/myfiles/main/resources/Workflow/FindInsured/requestSchema.json",
                 "exampleSetFlag" : false
               },
               "exampleSetFlag" : false
