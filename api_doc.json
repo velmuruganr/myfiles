@@ -1,0 +1,680 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Solartis Insure Open API Documentation",
+    "description" : "API documentation for Solartis Insure Microservices generated and maintained by PMT",
+    "contact" : {
+      "email" : "orchidapi@solartis.com"
+    },
+    "version" : "1.0.0.1"
+  },
+  "servers" : [ {
+    "url" : "http://10.101.1.72:8080/solartisinsure"
+  } ],
+  "paths" : {
+    "/pl/api/transaction/createsubmission" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Transaction" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Transaction/createsubmission/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pl/api/transaction/findinsured" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Transaction" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Transaction/findinsured/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pl/api/transaction/getcoveragelimitsandrates" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Transaction" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Transaction/getcoveragelimitsandrates/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pl/api/utility/getairdistancetocoast" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Utility" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Utility/getairdistancetocoast/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pl/api/workflow/generate" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Workflow" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Workflow/generate/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pl/api/workflow/getavailablemarkets" : {
+      "description" : "",
+      "post" : {
+        "tags" : [ "Workflow" ],
+        "parameters" : [ {
+          "name" : "OwnerId",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "4742"
+          }
+        }, {
+          "name" : "UserName",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "solartis_agent"
+          }
+        }, {
+          "name" : "Token",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "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"
+          }
+        }, {
+          "name" : "ApplicableFromDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "EffectiveDate",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "12/16/2022"
+          }
+        }, {
+          "name" : "Mode",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "LIVE",
+            "enum" : [ "DEV", "TEST", "LIVE" ]
+          }
+        }, {
+          "name" : "Environment",
+          "in" : "header",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ],
+            "default" : "15",
+            "enum" : [ "25", "20", "15" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "/opt/CI/SharedData/Shared/Transaction//orchid/Workflow/getavailablemarkets/requestSchema.json",
+                "exampleSetFlag" : false
+              },
+              "exampleSetFlag" : false
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Error Response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiErrorResponse",
+                  "exampleSetFlag" : false
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ApiErrorResponse" : {
+        "properties" : {
+          "errorCode" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          },
+          "errorKey" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          },
+          "errorMessage" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          },
+          "errorUserMessage" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          },
+          "errorType" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          },
+          "errorLevel" : {
+            "type" : "string",
+            "exampleSetFlag" : false,
+            "types" : [ "string" ]
+          }
+        },
+        "description" : "Error Response Schema",
+        "exampleSetFlag" : false
+      }
+    }
+  }
+}
