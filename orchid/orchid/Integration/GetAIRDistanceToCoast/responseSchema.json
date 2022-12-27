@@ -1,0 +1,37 @@
+{
+  "type" : "object",
+  "properties" : {
+    "ServiceRequestDetail" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : ""
+    },
+    "Property" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : ""
+    },
+    "OwnerId" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "1"
+    },
+    "EventName" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "GetAIRDistanceToCoast"
+    },
+    "ResponseStatus" : {
+      "type" : "string",
+      "exampleSetFlag" : false,
+      "types" : [ "string" ],
+      "default" : "Success"
+    }
+  },
+  "exampleSetFlag" : false,
+  "types" : [ "object" ]
+}
